@@ -1,0 +1,129 @@
+{
+  "name": "Pregnancy System Quick Replies",
+  "description": "怀孕系统快速回复按钮配置",
+  "version": "1.0",
+  "quickReplies": [
+    {
+      "label": "🤰 使角色怀孕",
+      "message": "/pregnant {{input}}",
+      "title": "输入角色名称让其怀孕",
+      "automationId": "",
+      "contextList": [],
+      "isHidden": false,
+      "showLabel": true,
+      "injectInput": true,
+      "mes": ""
+    },
+    {
+      "label": "📊 怀孕状态",
+      "message": "/pregnant-status",
+      "title": "查看所有角色的怀孕状态",
+      "automationId": "",
+      "contextList": [],
+      "isHidden": false,
+      "showLabel": true,
+      "injectInput": false,
+      "mes": ""
+    },
+    {
+      "label": "⏭️ 推进时间",
+      "message": "/pregnant-advance {{input}}",
+      "title": "推进怀孕时间（天数）",
+      "automationId": "",
+      "contextList": [],
+      "isHidden": false,
+      "showLabel": true,
+      "injectInput": true,
+      "mes": ""
+    },
+    {
+      "label": "❌ 终止怀孕",
+      "message": "/pregnant-abort {{input}}",
+      "title": "清除角色的怀孕状态",
+      "automationId": "",
+      "contextList": [],
+      "isHidden": false,
+      "showLabel": true,
+      "injectInput": true,
+      "mes": ""
+    },
+    {
+      "label": "🚨 触发分娩",
+      "message": "/pregnant-labor {{input}}",
+      "title": "手动触发角色进入分娩",
+      "automationId": "",
+      "contextList": [],
+      "isHidden": false,
+      "showLabel": true,
+      "injectInput": true,
+      "mes": ""
+    },
+    {
+      "label": "💉 催产",
+      "message": "/pregnant-induce {{input}}",
+      "title": "对过期妊娠角色进行催产",
+      "automationId": "",
+      "contextList": [],
+      "isHidden": false,
+      "showLabel": true,
+      "injectInput": true,
+      "mes": ""
+    },
+    {
+      "label": "🔍 察觉度状态",
+      "message": "/pregnant-awareness {{input}}",
+      "title": "查看角色的妊娠察觉度",
+      "automationId": "",
+      "contextList": [],
+      "isHidden": false,
+      "showLabel": true,
+      "injectInput": true,
+      "mes": ""
+    },
+    {
+      "label": "➕ 增加察觉度",
+      "message": "/pregnant-awareness-add {{input}} 10",
+      "title": "手动增加角色察觉度（格式：角色名 数值）",
+      "automationId": "",
+      "contextList": [],
+      "isHidden": false,
+      "showLabel": true,
+      "injectInput": true,
+      "mes": ""
+    },
+    {
+      "label": "🧪 验孕棒",
+      "message": "/pregnant-test {{input}}",
+      "title": "角色使用验孕棒测试",
+      "automationId": "",
+      "contextList": [],
+      "isHidden": false,
+      "showLabel": true,
+      "injectInput": true,
+      "mes": ""
+    },
+    {
+      "label": "🏥 产检",
+      "message": "/pregnant-doctor {{input}}",
+      "title": "角色进行产检（大幅提升察觉度）",
+      "automationId": "",
+      "contextList": [],
+      "isHidden": false,
+      "showLabel": true,
+      "injectInput": true,
+      "mes": ""
+    }
+  ],
+  "usage": {
+    "导入方法": "在 SillyTavern 中打开 Quick Reply 设置，点击导入，选择此文件",
+    "使用说明": {
+      "带 {{input}} 的按钮": "点击后会弹出输入框，需要输入角色名或数值",
+      "不带 {{input}} 的按钮": "点击后直接执行",
+      "示例": {
+        "使角色怀孕": "点击按钮 → 输入 'Lily' → 确认",
+        "推进时间": "点击按钮 → 输入 '7' → 确认（推进7天）",
+        "增加察觉度": "点击按钮 → 输入 'Lily 20' → 确认（给Lily增加20点察觉度）"
+      }
+    }
+  }
+}
